@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="root@connect.bjb1.seetacloud.com:10132 password" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="root@connect.bjb1.seetacloud.com:10132 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_584" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:12896 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_285" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:17423 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_989" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:20614 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_335" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:20614 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_448" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:21671 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_536" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:22241 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_275" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:30984 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_229" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:37325 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_314" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:37325 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_610" local="$PROJECT_DIR$/../anaconda3/envs/graphrag1" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:37325 password (3)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_133" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:37325 password (4)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_615" local="$PROJECT_DIR$/../anaconda3/envs/graphrag1" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:37728 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_546" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:52075 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_470" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:54053 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_678" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:56339 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/ragtest" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@connect.bjb1.seetacloud.com:57393 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_346" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
