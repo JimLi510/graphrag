@@ -6,7 +6,7 @@ Basic RAG的处理流程为提出问题，进入向量数据库检索出含义�
 
 这类问题有更高效的解决办法，即提前提取出关键信息，建立节点将其关联，构建知识图谱。提取信息构建知识图谱可以用llm构建，根据整理好的信息进行回复。这就是Graph RAG技术。比如“Who is Scrooge, and what are his main relationships?”，我们可以通过Scrooge的节点找到与他有重要关系的人，并再往下找的这些人的有关信息。这是Graph RAG另一大特征，即层次结构。将知识图谱进行聚类，把相应信息合并在一起，再整理出层次结构，即Community Detection算法。
 
-![图片2](/Users/lisideng/Desktop/project/图片2.png)
+![图片2](./图片2.png)
 ##二、实验分析
 2.1 实验环境
 
@@ -27,11 +27,11 @@ nomic-embed-text
 2.2实验步骤
 1、配置SSH
 创建并开启服务器，注意python版本至少3.10以上
-![图片3](/Users/lisideng/Desktop/project/图片3.png)
+![图片3](./图片3.png)
 输入相应主机名、端口号、用户名
-![图片4](/Users/lisideng/Desktop/project/图片4.png)
+![图片4](./图片4.png)
 配置解释器，同步文件夹
-![图片5](/Users/lisideng/Desktop/project/图片5.png)
+![图片5](./图片5.png)
 导入相应环境
 2、部署ollama并下载大模型
 Linux输入以下命令进行下载
@@ -49,7 +49,7 @@ Linux输入以下命令进行下载
 `ollama pull nomic-embed-text`
 
 通过ollama list命令查看已下载模型
-![图片6](/Users/lisideng/Desktop/project/图片6.png)
+![图片6](./图片6.png)
 3、 安装graphrag所需环境
 输入如下命令安装graphrag库
 
@@ -60,7 +60,7 @@ Linux输入以下命令进行下载
 `mkdir -p ./ragtest/input`
 
 5、通过Filezilla导入预训练文本
-![图片7](/Users/lisideng/Desktop/project/图片7.png)
+![图片7](./图片7.png)
 6、初始化
 使用如下命令对项目进行初始化
 python -m graphrag.index --init --root ./ragtest
@@ -69,41 +69,41 @@ python -m graphrag.index --init --root ./ragtest
 使用如下命令启动训练
 python -m graphrag.index --root ./ragtest
 结果图如下
-![图片9](/Users/lisideng/Desktop/project/图片9.png)
-![图片10](/Users/lisideng/Desktop/project/图片10.png)
+![图片9](./图片9.png)
+![图片10](./图片10.png)
 2.3实验结果
 
 基于llama3.1
 
 1、 A Chrirmas Carol
 询问英文问题
-![图片11](/Users/lisideng/Desktop/project/图片11.png)
+![图片11](./图片11.png)
 英文回答
-![图片12](/Users/lisideng/Desktop/project/图片12.png)
+![图片12](./图片12.png)
 询问中文问题
-![图片13](/Users/lisideng/Desktop/project/图片13.png)
+![图片13](./图片13.png)
 中文回答
-![图片14](/Users/lisideng/Desktop/project/图片14.png)
+![图片14](./图片14.png)
 中文回答书名出现错误
 问题中增加书名细节
-![图片15](/Users/lisideng/Desktop/project/图片15.png)
+![图片15](./图片15.png)
 中文回答
-![图片16](/Users/lisideng/Desktop/project/图片16.png)
+![图片16](/./图片16.png)
 
 2、Tree frog adhesion
 
 英文问题1
-![图片17](/Users/lisideng/Desktop/project/图片17.png)
+![图片17](./图片17.png)
 英文回答
-![图片18](/Users/lisideng/Desktop/project/图片18.png)
+![图片18](./图片18.png)
 英文问题2
-![图片19](/Users/lisideng/Desktop/project/图片19.png)
+![图片19](./图片19.png)
 英文回答
-![图片20](/Users/lisideng/Desktop/project/图片20.png)
+![图片20](./图片20.png)
 中文问题
-![图片21](/Users/lisideng/Desktop/project/图片21.png)
+![图片21](./图片21.png)
 中文回答
-![图片22](/Users/lisideng/Desktop/project/图片22.png)
+![图片22](./图片22.png)
 
 小结：llama3.1在回答英文和中文问题人物特征上细节有所欠缺，回答中文问题上出现如书名的错误。
 
@@ -112,54 +112,54 @@ python -m graphrag.index --root ./ragtest
 1、 A Chrirmas Carol
 
 询问英文问题
-![图片23](/Users/lisideng/Desktop/project/图片23.png)
+![图片23](./图片23.png)
 英文回答
-![图片24](/Users/lisideng/Desktop/project/图片24.png)
+![图片24](./图片24.png)
 询问中文问题
-![图片25](/Users/lisideng/Desktop/project/图片25.png)
+![图片25](./图片25.png)
 中文回答
-![图片26](/Users/lisideng/Desktop/project/图片26.png)
+![图片26](./图片26.png)
 
 2、Tree frog adhesion
 
 英文问题1
-![图片27](/Users/lisideng/Desktop/project/图片27.png)
+![图片27](./图片27.png)
 英文回答
-![图片28](/Users/lisideng/Desktop/project/图片28.png)
+![图片28](./图片28.png)
 英文问题2
-![图片29](/Users/lisideng/Desktop/project/图片29.png)
+![图片29](./图片29.png)
 英文回答
-![图片30](/Users/lisideng/Desktop/project/图片30.png)
+![图片30](./图片30.png)
 中文问题
-![图片31](/Users/lisideng/Desktop/project/图片31.png)
+![图片31](./图片31.png)
 中文回答
-![图片32](/Users/lisideng/Desktop/project/图片32.png)
+![图片32](./图片32.png)
 
 基于phi3.5
 
 1、 A Chrirmas Carol
 询问英文问题
-![图片33](/Users/lisideng/Desktop/project/图片33.png)
+![图片33](./图片33.png)
 英文回答
-![图片34](/Users/lisideng/Desktop/project/图片34.png)
+![图片34](./图片34.png)
 询问中文问题
-![图片35](/Users/lisideng/Desktop/project/图片35.png)
+![图片35](./图片35.png)
 中文回答
 ![图片36](/Users/lisideng/Desktop/project/图片36.png)
 
 2、Tree frog adhesion
 
 英文问题1
-![图片37](/Users/lisideng/Desktop/project/图片37.png)
+![图片37](./图片37.png)
 英文回答
-![图片38](/Users/lisideng/Desktop/project/图片38.png)
+![图片38](./图片38.png)
 英文问题2
-![图片39](/Users/lisideng/Desktop/project/图片39.png)
+![图片39](./图片39.png)
 英文回答
-![图片40](/Users/lisideng/Desktop/project/图片40.png)
+![图片40](./图片40.png)
 中文问题
-![图片41](/Users/lisideng/Desktop/project/图片41.png)
+![图片41](./图片41.png)
 中文回答
-![图片42](/Users/lisideng/Desktop/project/图片42.png)
+![图片42](./图片42.png)
 
 小结：phi3.5在英文回答中对人物特征的细节相较于llama3.1更丰富，中文回答上细节丰富度基本一致。
