@@ -2,7 +2,7 @@
 ##一、原理介绍
 Basic RAG的处理流程为提出问题，进入向量数据库检索出含义类似的chunk，将chunk与问题整合形成prompt，最终给用户恢复。传统rag在具体问题中处理能力优秀，如询问某产品价格。但是在处理宏观问题上存在问题，如查询技术团队的成果或询问书籍中主人公的人物关系。即所需信息散落在多个chunks之中（connecting the dots），大模型需要理解全文，提取关键信息，所以效果不佳。
 
-![图片1](/Users/lisideng/Desktop/project/图片1.png)
+![图片1](./图片1.png)
 
 这类问题有更高效的解决办法，即提前提取出关键信息，建立节点将其关联，构建知识图谱。提取信息构建知识图谱可以用llm构建，根据整理好的信息进行回复。这就是Graph RAG技术。比如“Who is Scrooge, and what are his main relationships?”，我们可以通过Scrooge的节点找到与他有重要关系的人，并再往下找的这些人的有关信息。这是Graph RAG另一大特征，即层次结构。将知识图谱进行聚类，把相应信息合并在一起，再整理出层次结构，即Community Detection算法。
 
