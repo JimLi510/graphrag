@@ -145,7 +145,7 @@ python -m graphrag.index --root ./ragtest
 询问中文问题
 ![图片35](./图片35.png)
 中文回答
-![图片36](/Users/lisideng/Desktop/project/图片36.png)
+![图片36](./图片36.png)
 
 2、Tree frog adhesion
 
